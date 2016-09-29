@@ -1,3 +1,12 @@
+# About this fork (sscarduzio)
+
+This is a good library but it's been totally abandoned for years. This is what I changed:
+
+* Libraries have been refreshed to the latest versions
+* Code ported to Scala 2.11 (the original was be 2.10)
+* Removed akka deps because they were not even used
+
+---
 =======================================
 QuantScale: Scala Quant Finance Library
 =======================================
@@ -9,5 +18,4 @@ It leverages Akka and Scala STM to be a fully concurrent port of QuantLib.
 More info about QuantLib at http://quantlib.org
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/choucrifahed/quantscale/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
