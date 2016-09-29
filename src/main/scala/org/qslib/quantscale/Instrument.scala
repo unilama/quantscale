@@ -89,6 +89,6 @@ trait Instrument extends LazyObject {
    * state when the expiration condition is met.
    */
   protected def setupExpired() {
-    cachedResults.single() = future { emptyResults }
+    cachedResults.single() = Future { emptyResults }
   }
 }

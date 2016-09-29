@@ -80,7 +80,7 @@ import org.qslib.quantscale.instrument.OneAssetOptionResults
 case class AnalyticEuropeanEngine(process: GeneralizedBlackScholesProcess) extends PricingEngine {
   override type InstrumentType = OneAssetOption
 
-  def calculate(instrument: InstrumentType): Future[instrument.ResultsType] = future {
+  def calculate(instrument: InstrumentType): Future[instrument.ResultsType] = Future {
     require(instrument.exercise.isInstanceOf[EuropeanExercise], "not an European option")
     require(instrument.payoff.isInstanceOf[StrikedTypePayoff], "non-striked payoff given")
 

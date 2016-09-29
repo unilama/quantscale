@@ -38,7 +38,6 @@
 
 package org.qslib.quantscale.pattern
 
-import scala.util.Try
 import org.qslib.quantscale._
 import scala.concurrent._
 import ExecutionContext.Implicits.global
@@ -56,7 +55,7 @@ trait LazyObject extends Observable with Observer {
 
   protected val frozen: Ref[Boolean] = Ref(false)
   protected val calculated: Ref[Boolean] = Ref(false)
-  protected val cachedResults: Ref[Future[ResultsType]] = Ref(future { emptyResults })
+  protected val cachedResults: Ref[Future[ResultsType]] = Ref(Future { emptyResults })
 
   protected val emptyResults: ResultsType
 
