@@ -3,7 +3,7 @@ organization := "org.quantlib"
 name := "quantscale"
 description := "quantlib implementation in scala"
 
-version := "0.1.0"
+version := "0.2.0-SNAPSHOT"
 
 scalaVersion := "2.11.8"
 scalacOptions ++= Seq("-unchecked", "-deprecation")

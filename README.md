@@ -9,6 +9,8 @@ More info about QuantLib at http://quantlib.org
 
 ## Kudos
 
+Original library creator @choucrifahed
+
 Thanks to @sscarduzio library gain:
 * Libraries have been refreshed to the latest versions
 * Code ported to Scala 2.11 (the original was be 2.10)
